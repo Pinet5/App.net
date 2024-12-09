@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <style>
+  body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000000f4;
+  height: 100%;
+  color: #fff;
+}
+
+.otp-field {
+  margin-top: 3%;
+}
+
+input {
+  width: 24px;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 6%;
+  border: 2px solid #55525c;
+  background: #21232d;
+  font-weight: bold;
+  color: #fff;
+  outline: none;
+  transition: all 0.1s;
+}
+
+
+
+.disabled {
+  opacity: 0.5;
+}
+
+.space {
+  margin-right: 1rem !important;
+}      
+
+.fixed {
+  width: 150px;
+  height: 100px;
+  line-height: 50px;
+  margin-top: 50%;
+}
+
+.fixed2 {
+  width: 70px;
+  height: 70px;
+  line-height: 50px;
+  margin-top: 10%;
+  border-radius: 50px;
+}
+.sumbit {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 6%;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    width: 89%;
+    font-size: 16px;
+}
+    </style>
+
+    <title>Create a PIN</title>
+               
+</head>
+
+<body>
+  
+ <img src="Lock.png" alt="" class="fixed">   
+
+    <!-- Further code here -->
+               <h1>Create a PIN</h1>
+ <p style="color: #89898947;">This is for ensuring the safety of your assets</p>
+<form action="successfulPin.html">
+            <input type="number" id="first" name="first" required>
+
+           <input class="space" type="number" name="password"/>
+            
+             <input type="number" id="password" name="password"  required>
+             
+              <input type="number" id="password" name="password"  required>
+    
+    
+            <button class="sumbit">
+ <span class="btnText">Submit</span>
+                                  </button>
+ </form>                   
+        </body>
+ </html>
