@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lúpûs MìñdÇhãíñ</title>
+  <!-- Linking SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+<body style="background: #070707; width: 100%; height: 100%;">
+ 
+ <style>
+     /* Importing Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  height: auto;
+  color: #fff;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background: none;
+  border: none;
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+    margin-left: 8%;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 89%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #0000009a;
+    transition: all 0.3s linear;
+}
+
+.card-list .card-item .message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+ </style>
+   
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide">
+   <video  width="350" autoplay muted loop>
+        <source src="animated_sign_in_first.mp4" type="video/mp4">
+</video>
+             <h2 class="user-name">P2P exchange</h2>
+          <p class="user-profession" style="font-size: 15px;">Exchange crypto in just minutes.</p>
+        </div>
+        
+        <div class="card-item swiper-slide">
+    <video width="350" autoplay muted loop>
+        <source src="animated_sign_in.mp4" type="video/mp4">
+</video>
+          <h2 class="user-name">Income of up to 14% APY</h2>
+          <p class="user-profession" style="font-size: 15px;">Store USDT, USDC, BTC to get daily income</p>
+       
+        </div>
+        <div class="card-item swiper-slide">
+         <video width="350" autoplay muted loop>
+        <source src="animated_third.mp4" type="video/mp4">
+</video>
+          <h2 class="user-name">Mining pool with 0.5% fee</h2>
+          <p class="user-profession" style="font-size: 15px;">For BTC, BCH, LTC and fee free daily payout</p>
+      
+        </div>
+        <div class="card-item swiper-slide">
+      <video width="350" autoplay muted loop>
+        <source src="animated_sign_in_fourth.mp4" type="video/mp4">
+</video>
+          <h2 class="user-name">Buy to mine</h2>
+          <p class="user-profession" style="font-size: 15px;">Make up to 99% profit in one crypto</p>
+       
+        </div>
+      </div>        
+    <div class="swiper-pagination"></div>
+     
+    </div>
+  </div>
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Linking custom script -->
+  <script>
+      const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // Pagination bullets
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+  </script> 
+ 
+ 
+ 
+<div>   
+   <a href="SignUp.html"><Button style="position: center;
+  width: 87%;
+  height: 50px;
+  margin-top: 1%;
+  margin-left: 6.7%;
+  background: #16161682;
+  box-shadow: 0 0 10px #f0f0f0;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;">Create an account</Button></a>
+  
+       <a href="Login.html"><input id="button" type="submit" value="My wallet" style="position: center;
+  width: 87%;
+  height: 50px;
+  margin-top: 8px;
+  margin-bottom: 5%;
+  margin-left: 6.7%;
+  background: #16161682;
+  box-shadow: 0 0 10px #f0f0f0;
+  font-size: 16px;
+  color: #fff;
+  cursor: none;
+  border-radius: 10px;
+  border: none;
+  outline: none;"></a>
+    </div>
+      
+        </div>
+     </body>
+</html>
